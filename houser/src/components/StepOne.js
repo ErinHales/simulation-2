@@ -12,7 +12,7 @@ class StepOne extends Component {
             address: "", 
             city: "", 
             state: "",
-            zipcode: 0
+            zipcode: ""
         }
     }
 
@@ -36,6 +36,8 @@ class StepOne extends Component {
         var {name, address, city, state, zipcode} = this.state;
         return(            
             <div className="form">
+                <div className="formHeader">
+                </div>
                 <input 
                     type="text"
                     placeholder="name" 

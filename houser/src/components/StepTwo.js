@@ -33,8 +33,10 @@ class StepTwo extends Component {
                     placeholder="Image URL" 
                     value={this.state.image}
                     onChange={(e) => this.eventHandler(e)} />
-                <Link className="previous" to="/wizard/step1" onClick={() => this.props.updateImage(image)}>Previous</Link>
-                <Link className="next" to="/wizard/step3" onClick={() => this.props.updateImage(image)}>Next</Link>
+                <div className="forwardBackLinks">
+                    <Link className="previous" to="/wizard/step1" onClick={() => this.props.updateImage(image)}>Previous</Link>
+                    <Link className="next" to="/wizard/step3" onClick={() => this.props.updateImage(image)}>Next</Link>
+                </div>
             </div>
         )
     }

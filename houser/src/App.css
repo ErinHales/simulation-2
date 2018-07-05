@@ -17,7 +17,7 @@ body {
 
 .header h1 {
   font-size: 80px;
-  margin-left: 300px;
+  margin-left: 20%;
 }
 
 .form {
@@ -62,4 +62,79 @@ body {
 
 .pink {
   background-color: #FEC2C2;
+}
+
+.house img {
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+.houseInfo {
+  height: 300px;
+  padding: 10px;
+}
+
+.house {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addProperty {
+  margin-bottom: 50px;
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+}
+
+.dashboardHeader h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.dashboard h2 {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.houseInfo {
+  text-align: left;
+  padding-left: 70px;
+}
+
+.houseInfo h1 {
+  font-size: 40px;
+}
+
+.houseInfo h3 {
+  font-size: 25px;
+}
+
+.houseContainer {
+  width: 450px;
+  overflow: hidden;
+}
+
+.houseFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.next, 
+.previous {
+  margin: 20px;
+  background-color: #3B5249;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.forwardBackLinks {
+  margin-top: 20px;
 }

@@ -54,9 +54,9 @@ class StepThree extends Component {
                     value={this.state.rent}
                     onChange={(e) => this.eventHandler("rent", e)} />
                 <Link className="previous" to="/wizard/step2" onClick={() => this.props.updateRent(mortgage, rent)}>Previous</Link>
-                <button className="button" onClick={() => {
+                <Link to="/"><button className="button" onClick={() => {
                     this.postHouse()
-                    this.props.updateRent(mortgage,rent)}}>Complete</button>
+                    this.props.updateRent(mortgage,rent)}}>Complete</button></Link>
             </div>
         )
     }

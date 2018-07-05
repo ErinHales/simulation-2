@@ -14,10 +14,6 @@ export default class Dashboard extends Component {
         this.getAllHomes = this.getAllHomes.bind(this);
     }
 
-    componentDidUpdate() {
-
-    }
-
     componentDidMount() {
         axios.get("/allhouses").then(res => {
             this.setState({
@@ -49,7 +45,13 @@ export default class Dashboard extends Component {
         
         return(
             <div className="dashboard">
-                <Link to="/wizard/step1" className="button">Add New Property</Link>
+                <div className="dashboardHeader">
+                    <div>
+                        <h1>Dashboard</h1>
+                        <h2>House Listings:</h2>
+                    </div>
+                    <Link to="/wizard/step1"><button className="button addProperty">Add New Property</button></Link>
+                </div>
                 {showHouses}
             </div>
         )

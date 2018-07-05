@@ -4,7 +4,8 @@ import StepOne from '../StepOne';
 import StepTwo from '../StepTwo';
 import StepThree from '../StepThree';
 import {connect} from 'react-redux';
-import cancel from '../../ducks/reducer';
+import {cancel} from '../../ducks/reducer';
+
 
 class Wizard extends Component {
 
